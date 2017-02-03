@@ -12,7 +12,7 @@ Use `ng-container` in combination with `ngIf` for elements which should not be d
 While doing a bit of refactoring my IDE complained about an `Unresolved variable or type tab`.
 
 This is an obviously simple problem when looking at the code:
-```html
+```
 <ul>
     <li>Tab A</li>
     <li>Tab B</li>
@@ -38,7 +38,7 @@ it isn't possible to have multiple structural directives on the same element.
 `ngIf` as well as `ngFor` are such structural directives.
 
 One might be tempted to create something as the following:
-```html
+```
 [...]
 <div *ngIf="tabs.length > 0">
     <div *ngFor="let tab of tabs">
@@ -60,7 +60,7 @@ Angular2 has an interesting element called `ng-container` which itself does not 
 DOM.
 
 We will look into that by code:
-```html
+```
 <ul>
     <li>Tab A</li>
     <li>Tab B</li>
@@ -81,7 +81,7 @@ We will look into that by code:
 This will result with a `div` per tab in your tabs property.
 
 The result in the DOM would look something like this:
-```html
+```
 <ul>
     <li>Tab A</li>
     <li>Tab B</li>
@@ -96,7 +96,7 @@ The result in the DOM would look something like this:
 ```
 
 Whereas the code from the original problem would render to something like this:
-```html
+```
 <ul>
     <li>Tab A</li>
     <li>Tab B</li>
