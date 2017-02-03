@@ -3,9 +3,7 @@ layout: post
 title: Angular2 Container
 ---
 
-## TL;DR
-
-Use `ng-container` in combination with `ngIf` for elements which should not be displayed in the DOM.
+In short: Use `ng-container` in combination with `ngIf` for elements which should not be displayed in the DOM.
 
 ## Long version
 
