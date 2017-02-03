@@ -116,6 +116,7 @@ Depending on your needs you might prefer the result from the original problem bu
 still have the problem of the unresolved variable.
 
 So to achieve the exact same result with fixing the problem would mean to
+
 * move the `ngFor` a level up into a separate element
 * make either the element with the `ngIf` or the `ngFor` to a `ng-container`
 
